@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".View.CVActivity">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/txt_name"
+              android:textSize="@dimen/dimen_text_view_title"
+              android:layout_centerHorizontal="true"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/txt_studies"
+              android:textSize="@dimen/dimen_text_view_title"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/txt_name"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/txt_age"
+              android:textSize="15dp"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/txt_studies"
+
+    />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/txt_direction"
+              android:textSize="15dp"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/txt_age"
+    />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/txt_email"
+              android:textSize="15dp"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/txt_direction"
+    />
+
+    <TextView
+            android:id="@+id/txt_aboutme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/txt_email"
+
+    />
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="190dp"
+            android:layout_height="207dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            />
+
+    <TextView android:background="#00000000"
+              android:layout_alignBottom="@id/progressBar"
+              android:layout_centerHorizontal="true"
+              android:text="Cargando..."
+              android:textSize="20dp"
+              android:textColor="@android:color/black"
+              android:id="@+id/tv_cargando"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+    />
+
+
+
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomTabNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/navigation_menu"
+            app:itemTextColor="@color/colorPrimaryDark"
+            app:itemTextAppearanceActive="@style/Widget.Design.BottomNavigationView"
+            app:labelVisibilityMode="labeled"
+    />
+
+
+
+</RelativeLayout>
