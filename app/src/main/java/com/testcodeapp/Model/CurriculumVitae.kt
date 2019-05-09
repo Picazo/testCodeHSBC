@@ -4,13 +4,7 @@ import com.beust.klaxon.Json
 
 object CurriculumVitae {
 
-    data class Skills(
-        var skills: Array<String>
-    )
-
-    data class Carreir(
-        var previus_job: Array<String>
-    )
+    data class Skills(val title: String, val year: String, val description: String)
 
     data class Person(
         @Json(name = "name")
@@ -32,5 +26,4 @@ object CurriculumVitae {
         val about_me: String
 
         )
-
 }

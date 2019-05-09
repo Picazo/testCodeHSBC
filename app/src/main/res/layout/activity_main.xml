@@ -75,6 +75,27 @@
             android:visibility="visible"
             />
 
+    <TextView
+            android:id="@+id/txt_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_ten"
+            android:layout_marginBottom="@dimen/dimen_ten"
+            android:gravity="center_horizontal"
+            android:text="@string/job_experience"
+            android:textSize="@dimen/dimen_twenty"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_below="@+id/txt_aboutme"
+
+    />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_skills"/>
+
     <TextView android:background="#00000000"
               android:layout_alignBottom="@id/progressBar"
               android:layout_centerHorizontal="true"
@@ -88,9 +109,11 @@
 
 
 
+
+
     <android.support.design.widget.BottomNavigationView
             android:id="@+id/bottomTabNavigationView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_progress"
             android:layout_alignParentBottom="true"
             app:menu="@menu/navigation_menu"

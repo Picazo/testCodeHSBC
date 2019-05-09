@@ -39,8 +39,6 @@ import org.junit.runner.RunWith
 class CVScreenTest {
 
     @Rule
-
-
     private fun withItemText(itemText: String): Matcher<View> {
         checkArgument(itemText.isNotEmpty(), "itemText cannot be null or empty")
         return object : TypeSafeMatcher<View>() {
