@@ -52,7 +52,7 @@ class CVActivity : AppCompatActivity(), ContractCV.View {
     }
 
     override fun showToast(resultData: String){
-        Toast.makeText(applicationContext,"Data: ", Toast.LENGTH_LONG).show()
+        Toast.makeText(applicationContext,resultData, Toast.LENGTH_LONG).show()
     }
 
 

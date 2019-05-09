@@ -5,9 +5,6 @@ import com.beust.klaxon.Klaxon
 import com.testcodeapp.APIS.APIServices
 import com.testcodeapp.Contract.ContractCV
 import com.testcodeapp.Model.CurriculumVitae
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.Disposable
-import io.reactivex.schedulers.Schedulers
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -16,15 +13,11 @@ import retrofit2.Response
 class CVPresenter(private val view: ContractCV.View): ContractCV.Presenter {
 
 
-    var disposable: Disposable? = null
-
     init {
         this.view.setPresenter(this)
     }
 
-    // instance of interface created for Retrofit API calls
     val apiService by lazy {
-        //initializing Retrofit stuff
         APIServices.getCV()
     }
 
@@ -61,14 +54,4 @@ class CVPresenter(private val view: ContractCV.View): ContractCV.Presenter {
         })
 
     }
-
-    fun showResult(result: String){
-        view.showToast(result)
-    }
-
-    fun showError(error : String){
-
-    }
-
-
 }

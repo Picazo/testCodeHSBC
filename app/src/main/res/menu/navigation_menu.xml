@@ -5,13 +5,13 @@
     <item
             android:id="@+id/bbn_item1"
             android:icon="@drawable/ic_about_me"
-            android:title="Información general" />
+            android:title="@string/info_general" />
     <item
             android:id="@+id/bbn_item2"
             android:icon="@drawable/ic_skills"
-            android:title="Habilidades" />
+            android:title="@string/skills" />
     <item
             android:id="@+id/bbn_item3"
             android:icon="@drawable/experience"
-            android:title="Experiencia laboral" />
+            android:title="@string/job_experience" />
 </menu>

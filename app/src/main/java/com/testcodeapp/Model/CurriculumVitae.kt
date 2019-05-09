@@ -12,10 +12,6 @@ object CurriculumVitae {
         var previus_job: Array<String>
     )
 
-    data class User(
-        var user: String
-    )
-
     data class Person(
         @Json(name = "name")
         val name: String,

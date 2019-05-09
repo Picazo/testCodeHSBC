@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">testCodeApp</string>
+    <string name="info_general">Información general</string>
+    <string name="skills">Habilidades</string>
+    <string name="job_experience">Experiencia laboral</string>
+    <string name="loading">Cargando ...</string>
+
 </resources>
