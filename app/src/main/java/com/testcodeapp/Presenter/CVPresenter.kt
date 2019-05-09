@@ -28,10 +28,6 @@ class CVPresenter(private val view: ContractCV.View): ContractCV.Presenter {
         APIServices.getCV()
     }
 
-    init {
-        this.view.setPresenter(this)
-    }
-
     override fun start() {
     }
 

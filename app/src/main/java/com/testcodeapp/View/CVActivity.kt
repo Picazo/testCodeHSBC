@@ -60,7 +60,6 @@ class CVActivity : AppCompatActivity(), ContractCV.View {
     override fun setData(name: String,age: String,direction: String,email: String,phone_number: String,about_me: String){
         progressBar.visibility = View.GONE
         tv_cargando.visibility = View.GONE
-        tv_about_me.visibility = View.VISIBLE
         txt_aboutme.text = about_me
         txt_name.text = name
         txt_age.text = age
